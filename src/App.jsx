@@ -3,12 +3,13 @@ import personas from "./data"
 import Compania from "./components/Compania"
 
 function App() {
-  
+
+  // Estado con la lista de empleados
   const [empleados, setEmpleados] = useState(personas)
 
+  // Elimino un empleado usando su id
   const despedirEmpleado = (id) => {
-    const nuevosEmpleados = empleados.filter(persona => persona.id !== id)
-    setEmpleados(nuevosEmpleados)
+    setEmpleados(empleados.filter(persona => persona.id !== id))
   }
 
   return (
