@@ -1,5 +1,4 @@
 const Empleado = ({ persona, despedirEmpleado }) => {
-    // Desestructuramos las propiedades del objeto persona
     const { id, name, age, image } = persona
 
     return (
