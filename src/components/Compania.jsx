@@ -1,5 +1,7 @@
+// Importo el componente que representa a cada empleado
 import Empleado from "./Empleado"
 
+// Este componente muestra la empresa y la lista de empleados
 const Compania = ({ empleados, despedirEmpleado }) => {
     return (
         <main>
@@ -10,9 +12,9 @@ const Compania = ({ empleados, despedirEmpleado }) => {
 
                 {empleados.map(persona => (
                     <Empleado
-                        key={persona.id}
-                        persona={persona}
-                        despedirEmpleado={despedirEmpleado}
+                        key={persona.id} 
+                        persona={persona} 
+                        despedirEmpleado={despedirEmpleado} 
                     />
                 ))}
             </section>
