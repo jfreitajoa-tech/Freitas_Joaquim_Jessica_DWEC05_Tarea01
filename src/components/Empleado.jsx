@@ -1,4 +1,6 @@
+// Este componente representa a un empleado individual
 const Empleado = ({ persona, despedirEmpleado }) => {
+    // Aquí saco los datos que necesito del objeto persona
     const { id, name, age, image } = persona
 
     return (
@@ -13,7 +15,7 @@ const Empleado = ({ persona, despedirEmpleado }) => {
             <button
                 className="icon-btn delete"
                 title="Despedir empleado"
-                onClick={() => despedirEmpleado(id)}
+                onClick={() => despedirEmpleado(id)} 
             >
                 ✖
             </button>
@@ -22,4 +24,3 @@ const Empleado = ({ persona, despedirEmpleado }) => {
 }
 
 export default Empleado
-
